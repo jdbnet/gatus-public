@@ -11,6 +11,7 @@ endpoint-websites: &websites
     - "[STATUS] == 200"
     - "[CERTIFICATE_EXPIRATION] > 48h"
 
+endpoints:
   - name: LittleLink
     <<: *websites
     url: "https://www.jdbnet.co.uk"
