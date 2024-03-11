@@ -1,3 +1,8 @@
+ui.title: "JDB-NET ǀ Gatus"
+ui.header: "JDB-NET ǀ Gatus"
+ui.logo: "https://assets.jdbnet.co.uk/linktree/logo-400x400.png"
+ui.link: "https://www.jdbnet.co.uk"
+
 storage:
   type: postgres
   path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@10.10.8.21:5432/${POSTGRES_DB}?sslmode=disable"
