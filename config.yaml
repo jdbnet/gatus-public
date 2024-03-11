@@ -1,0 +1,28 @@
+storage:
+  type: postgres
+  path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@10.10.8.21:5432/${POSTGRES_DB}?sslmode=disable"
+
+endpoint-websites: &websites
+  group: Websites
+  interval: 1m
+  client:
+    timeout: 10s
+  conditions:
+    - "[STATUS] == 200"
+    - "[CERTIFICATE_EXPIRATION] > 48h"
+
+  - name: LittleLink
+    <<: *websites
+    url: "https://www.jdbnet.co.uk"
+
+  - name: Apps
+    <<: *websites
+    url: "https://apps.jdbnet.co.uk/windows/Activator.cmd"
+
+  - name: Assets
+    <<: *websites
+    url: "https://assets.jdbnet.co.uk/linktree/logo-200x200.png"
+
+  - name: Docs
+    <<: *websites
+    url: "https://docs.jdbnet.co.uk/Proxmox/Build%20your%20own%20Proxmox%20LXC%20Template/"
