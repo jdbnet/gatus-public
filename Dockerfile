@@ -1,9 +1,9 @@
-# Original image
-FROM twinproduction/gatus:latest
-
-# Get secrets
+FROM alpine
 RUN --mount=type=secret,id=POSTGRES_DB \
   cat /run/secrets/POSTGRES_DB
+
+# Original image
+# FROM twinproduction/gatus:latest
 
 # Set environment variables
 # ENV POSTGRES_USER=POSTGRES_USER
