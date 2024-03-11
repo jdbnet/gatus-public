@@ -11,6 +11,12 @@ endpoint-websites: &websites
     - "[STATUS] == 200"
     - "[CERTIFICATE_EXPIRATION] > 48h"
 
+endpoint-services: &services
+  group: Services
+  interval: 1m
+  conditions:
+    - "[CONNECTED] == true"
+
 endpoints:
   - name: LittleLink
     <<: *websites
@@ -27,3 +33,7 @@ endpoints:
   - name: Docs
     <<: *websites
     url: "https://docs.jdbnet.co.uk/Proxmox/Build%20your%20own%20Proxmox%20LXC%20Template/"
+
+  - name: Plex
+    <<: *services
+    url: "tcp://10.10.8.14:32400"
