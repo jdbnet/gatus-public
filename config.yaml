@@ -38,6 +38,10 @@ endpoints:
   - name: Docs
     <<: *websites
     url: "https://docs.jdbnet.co.uk/Proxmox/Build%20your%20own%20Proxmox%20LXC%20Template/"
+  
+  - name: Mastodon
+    <<: *websites
+    url: "https://social.jdbnet.co.uk/explore"
 
   - name: Plex
     <<: *services
