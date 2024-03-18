@@ -43,6 +43,10 @@ endpoints:
     <<: *websites
     url: "https://social.jdbnet.co.uk/explore"
 
+  - name: Plant Pot RP Docs
+    <<: *websites
+    url: "https://plantpotrp.jdbnet.co.uk/Robberies/Store%20Robberies/"
+
   - name: Plex
     <<: *services
     url: "tcp://10.10.8.14:32400"
