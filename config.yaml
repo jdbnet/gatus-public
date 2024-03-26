@@ -33,7 +33,7 @@ endpoints:
 
   - name: Assets
     <<: *websites
-    url: "https://assets.jdbnet.co.uk/linktree/logo-200x200.png"
+    url: "https://assets.jdbnet.co.uk/logo/64x64.png"
 
   - name: Docs
     <<: *websites
