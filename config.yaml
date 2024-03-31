@@ -50,3 +50,7 @@ endpoints:
   - name: Plex
     <<: *services
     url: "tcp://10.10.8.14:32400"
+
+  - name: Fireshare
+    <<: *websites
+    url: "https://fireshare.jdbnet.co.uk"
