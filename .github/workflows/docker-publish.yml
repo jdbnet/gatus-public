@@ -22,7 +22,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push Docker image
-        uses: docker/build-push-action@af5a7ed5ba88268d5278f7203fb52cd833f66d6e
+        uses: docker/build-push-action@f8bc7f46003ef0cf98b715743d86c2f1ccd01436
         with:
           context: .  # Build context (path to Dockerfile)
           push: true
