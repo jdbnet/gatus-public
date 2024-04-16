@@ -29,3 +29,7 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:${{ github.run_number }}
             ghcr.io/${{ github.repository }}:latest
+          build-args: |
+            POSTGRES_USER=${{ secrets.POSTGRES_USER }}
+            POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+            POSTGRES_DB=${{ secrets.POSTGRES_DB }}

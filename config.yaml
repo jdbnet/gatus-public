@@ -1,8 +1,3 @@
-ui.title: "JDB-NET ǀ Gatus"
-ui.header: "JDB-NET ǀ Gatus"
-ui.logo: "https://assets.jdbnet.co.uk/linktree/logo-400x400.png"
-ui.link: "https://www.jdbnet.co.uk"
-
 storage:
   type: postgres
   path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@10.10.8.21:5432/${POSTGRES_DB}?sslmode=disable"
@@ -47,6 +42,10 @@ endpoints:
     <<: *websites
     url: "https://plantpotrp.jdbnet.co.uk/Robberies/Store%20Robberies/"
 
+  - name: Plant Pot PD Docs
+    <<: *websites
+    url: "https://plantpotpd.jdbnet.co.uk/Controls/Basic%20Controls/"
+
   - name: Plex
     <<: *services
     url: "tcp://10.10.8.14:32400"
@@ -58,7 +57,3 @@ endpoints:
   - name: Jamie Banks
     <<: *websites
     url: "https://jamiebanks.uk/Homelab/Hardware/Proxmox-01/"
-
-  - name: Plant Pot PD Docs
-    <<: *websites
-    url: "https://plantpotpd.jdbnet.co.uk/Controls/Basic%20Controls/"
