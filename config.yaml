@@ -47,6 +47,10 @@ endpoints:
     <<: *websites
     url: "https://plantpotrp.jdbnet.co.uk/Robberies/Store%20Robberies/"
 
+  - name: Plant Pot PD Docs
+    <<: *websites
+    url: "https://plantpotpd.jdbnet.co.uk/Controls/Basic%20Controls/"
+
   - name: Plex
     <<: *services
     url: "tcp://10.10.8.14:32400"
@@ -54,3 +58,7 @@ endpoints:
   - name: Fireshare
     <<: *websites
     url: "https://fireshare.jdbnet.co.uk"
+
+  - name: Jamie Banks
+    <<: *websites
+    url: "https://jamiebanks.uk/Homelab/Hardware/Proxmox-01/"
